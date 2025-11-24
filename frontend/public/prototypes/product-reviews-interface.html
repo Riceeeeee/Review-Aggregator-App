@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Multi-Source Product Review Aggregator</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-gray-50 min-h-screen">
+		<main class="max-w-6xl mx-auto p-6">
+			<header class="mb-6">
+				<h1 class="text-2xl font-semibold text-gray-900">Multi-Source Product Review Aggregator</h1>
+				<p class="text-sm text-gray-600">Compare reviews from Amazon, BestBuy, Walmart</p>
+			</header>
+
+			<section>
+                <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="text-lg font-semibold mb-4">Filter Products</h3>
+				<div class="grid sm:grid-cols-3 gap-4">
+					<div>
+						<label for="product-search" class="block text-sm font-medium mb-2">Search Products:</label>
+						<input id="product-search" type="search" placeholder="Search by product name..." class="w-full border rounded px-3 py-2" />
+					</div>
+					<div>
+						<label for="source-filter" class="block text-sm font-medium mb-2">Review Source:</label>
+						<select id="source-filter" class="w-full border rounded px-3 py-2">
+							<option value="all">All Sources</option>
+							<option value="Amazon">Amazon Reviews</option>
+							<option value="BestBuy">BestBuy Reviews</option>
+							<option value="Walmart">Walmart Reviews</option>
+						</select>
+					</div>
+					<div>
+						<label for="rating-filter" class="block text-sm font-medium mb-2">Minimum Rating:</label>
+						<select id="rating-filter" class="w-full border rounded px-3 py-2">
+							<option value="">Any rating</option>
+							<option value="4.5">4.5+</option>
+							<option value="4.0">4.0+</option>
+							<option value="3.5">3.5+</option>
+							<option value="3.0">3.0+</option>
+						</select>
+					</div>
+				</div>
+                </div>
+
+								<div class="mb-4 p-3 bg-white rounded border border-gray-200 flex items-center justify-between">
+									<p id="results-counter" class="text-sm font-medium text-gray-700">Showing 0 of 0 products</p>
+									<button id="reset-filters" class="ml-4 px-3 py-2 bg-red-50 text-red-700 border border-red-200 rounded text-sm hover:bg-red-100">Reset Filters</button>
+								</div>
+
+				<div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+					<!-- Product cards will be injected here -->
+				</div>
+			</section>
+		</main>
+
+		<script src="product-reviews-interface.js"></script>
+	</body>
+</html>

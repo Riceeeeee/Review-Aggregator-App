@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products – Multi-Source Review Aggregator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900">
+    <!-- =========================================
+         Site Header
+    ========================================== -->
+    <header class="border-b border-slate-200 bg-white">
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+        aria-label="Main navigation"
+      >
+        <a
+          href="index.html"
+          class="text-lg font-semibold tracking-tight text-slate-900"
+        >
+          Multi-Source Review Aggregator
+        </a>
+
+        <ul class="hidden gap-6 text-sm md:flex">
+          <li>
+            <a
+              href="index.html"
+              class="font-medium text-slate-900 hover:text-slate-700"
+              >Products</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =========================================
+         Main Content
+    ========================================== -->
+    <main class="mx-auto max-w-6xl px-4 py-8">
+      <header class="mb-8">
+        <h1 class="text-2xl font-bold tracking-tight md:text-3xl">
+          Products
+        </h1>
+        <p class="mt-1 text-sm text-slate-600">
+          Select a product to view detailed aggregated reviews across multiple
+          platforms.
+        </p>
+      </header>
+
+      <!-- =========================================
+           Product Grid
+      ========================================== -->
+      <section
+        aria-label="Product list"
+        class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <!-- =========================================
+             Product Card 1
+        ========================================== -->
+        <article
+          class="rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+        >
+          <a href="product-detail.html" aria-label="USB-C Fast Charger 30W">
+            <figure>
+              <img
+                src="https://placehold.co/600x400"
+                alt="USB-C Fast Charger 30W product image"
+                class="h-48 w-full rounded-t-2xl object-cover"
+              />
+            </figure>
+          </a>
+
+          <section class="p-4 space-y-3">
+            <header>
+              <a
+                href="product-detail.html"
+                class="text-lg font-semibold text-slate-900 hover:text-slate-700"
+                >USB-C Fast Charger 30W</a
+              >
+              <p class="mt-1 text-sm font-medium text-emerald-700">$19.99</p>
+            </header>
+
+            <!-- Review summary badge -->
+            <section
+              aria-label="Overall rating 4.2 out of 5 stars, 125 reviews"
+              class="flex items-center gap-2"
+            >
+              <p class="text-amber-500" aria-hidden="true">★★★★☆</p>
+              <p class="text-sm font-medium text-slate-700">4.2</p>
+              <p class="text-xs text-slate-500">125 reviews</p>
+            </section>
+
+            <p class="text-sm text-slate-600">
+              Fast-charging USB-C adapter with intelligent power delivery.
+            </p>
+          </section>
+        </article>
+
+        <!-- =========================================
+             Product Card 2
+        ========================================== -->
+        <article
+          class="rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+        >
+          <a href="product-detail.html" aria-label="Bluetooth Earbuds Pro">
+            <figure>
+              <img
+                src="https://placehold.co/600x400?text=Earbuds"
+                alt="Bluetooth Earbuds Pro product image"
+                class="h-48 w-full rounded-t-2xl object-cover"
+              />
+            </figure>
+          </a>
+
+          <section class="p-4 space-y-3">
+            <header>
+              <a
+                href="product-detail.html"
+                class="text-lg font-semibold text-slate-900 hover:text-slate-700"
+                >Bluetooth Earbuds Pro</a
+              >
+              <p class="mt-1 text-sm font-medium text-emerald-700">$59.99</p>
+            </header>
+
+            <section
+              aria-label="Overall rating 4.6 out of 5 stars, 420 reviews"
+              class="flex items-center gap-2"
+            >
+              <p class="text-amber-500" aria-hidden="true">★★★★★</p>
+              <p class="text-sm font-medium text-slate-700">4.6</p>
+              <p class="text-xs text-slate-500">420 reviews</p>
+            </section>
+
+            <p class="text-sm text-slate-600">
+              Noise-cancelling earbuds with long battery life.
+            </p>
+          </section>
+        </article>
+
+        <!-- =========================================
+             Product Card 3
+        ========================================== -->
+        <article
+          class="rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+        >
+          <a href="product-detail.html" aria-label="1080p Web Camera">
+            <figure>
+              <img
+                src="https://placehold.co/600x400?text=Webcam"
+                alt="1080p Web Camera product image"
+                class="h-48 w-full rounded-t-2xl object-cover"
+              />
+            </figure>
+          </a>
+
+          <section class="p-4 space-y-3">
+            <header>
+              <a
+                href="product-detail.html"
+                class="text-lg font-semibold text-slate-900 hover:text-slate-700"
+                >1080p Web Camera</a
+              >
+              <p class="mt-1 text-sm font-medium text-emerald-700">$29.99</p>
+            </header>
+
+            <section
+              aria-label="Overall rating 3.9 out of 5 stars, 89 reviews"
+              class="flex items-center gap-2"
+            >
+              <p class="text-amber-500" aria-hidden="true">★★★★☆</p>
+              <p class="text-sm font-medium text-slate-700">3.9</p>
+              <p class="text-xs text-slate-500">89 reviews</p>
+            </section>
+
+            <p class="text-sm text-slate-600">
+              Full-HD camera ideal for remote work and video conferencing.
+            </p>
+          </section>
+        </article>
+
+        <!-- =========================================
+             Product Card 4 (extra / optional)
+        ========================================== -->
+        <article
+          class="rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+        >
+          <a href="product-detail.html" aria-label="Portable Power Bank 20,000mAh">
+            <figure>
+              <img
+                src="https://placehold.co/600x400?text=Power+Bank"
+                alt="Portable Power Bank 20,000mAh product image"
+                class="h-48 w-full rounded-t-2xl object-cover"
+              />
+            </figure>
+          </a>
+
+          <section class="p-4 space-y-3">
+            <header>
+              <a
+                href="product-detail.html"
+                class="text-lg font-semibold text-slate-900 hover:text-slate-700"
+                >Portable Power Bank 20,000mAh</a
+              >
+              <p class="mt-1 text-sm font-medium text-emerald-700">$39.99</p>
+            </header>
+
+            <section
+              aria-label="Overall rating 4.4 out of 5 stars, 310 reviews"
+              class="flex items-center gap-2"
+            >
+              <p class="text-amber-500" aria-hidden="true">★★★★☆</p>
+              <p class="text-sm font-medium text-slate-700">4.4</p>
+              <p class="text-xs text-slate-500">310 reviews</p>
+            </section>
+
+            <p class="text-sm text-slate-600">
+              High-capacity power bank with fast charging and dual USB outputs.
+            </p>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <!-- =========================================
+         Footer
+    ========================================== -->
+    <footer class="mt-10 border-t border-slate-200 bg-white">
+      <section class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
+        <p>
+          &copy; 2025 Multi-Source Product Review Aggregator. Static prototype for Practice 1.
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
