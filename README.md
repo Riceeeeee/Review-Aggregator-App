@@ -199,4 +199,4 @@ npm run build        # build frontend
 
 ## License
 
-MIT (educational use encouraged).
+MIT (educational use encouraged). 
